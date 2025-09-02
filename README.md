@@ -1,4 +1,4 @@
-# Fitnes Store
+# Fitness Store
 
 <!-- Shields Exemplo, existem N diferentes shield em https://shields.io/ -->
 ![GitHub last commit](https://img.shields.io/github/last-commit/seu-usuario/seu-repositorio)
