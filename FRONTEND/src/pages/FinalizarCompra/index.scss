@@ -1,0 +1,302 @@
+.containerFinalizarCompra {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.content-formas {
+    flex-grow: 1;
+    color: #f0f0f0;
+}
+
+.content-formas h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.content-formas h4 {
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+.delivery-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.grid-item.two-columns {
+}
+
+.delivery-form-grid label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.delivery-form-grid input[type="text"],
+.delivery-form-grid input[type="tel"],
+.delivery-form-grid select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #f0f0f0;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.delivery-form-grid input::placeholder {
+    color: #999;
+}
+
+.delivery-form-grid select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="%23bbb"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+.postcode-wrapper,
+.phone-wrapper {
+    position: relative;
+}
+
+.postcode-wrapper input,
+.phone-wrapper input {
+    padding-right: 40px;
+}
+
+.postcode-wrapper .search-icon,
+.phone-wrapper .info-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.1em;
+    pointer-events: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    background-color: #555;
+    border: 1px solid #777;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    outline: none;
+}
+
+.checkbox-item input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.checkbox-item input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-item label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.content-forma-pagamento {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.content-forma-pagamento:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.content-forma-pagamento svg {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #007bff;
+}
+
+.content-forma-pagamento span {
+    font-size: 1em;
+    color: #f0f0f0;
+}
+
+@media (max-width: 510px) {
+    .containerFinalizarCompra {
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .content-container {
+        max-width: 100%;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .content-formas h3 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .content-formas h4 {
+        font-size: 1.1em;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+
+    .delivery-form-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .grid-item.full-width,
+    .grid-item.two-columns {
+        grid-column: 1 / -1;
+    }
+
+    .delivery-form-grid input[type="text"],
+    .delivery-form-grid input[type="tel"],
+    .delivery-form-grid select {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    .delivery-form-grid label {
+        font-size: 0.85em;
+    }
+
+    .postcode-wrapper input,
+    .phone-wrapper input {
+        padding-right: 35px;
+    }
+
+    .postcode-wrapper .search-icon,
+    .phone-wrapper .info-icon {
+        right: 12px;
+        font-size: 1em;
+        padding-top: 15px;
+    }
+
+    .checkbox-item {
+        margin-top: 12px;
+        gap: 8px;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .checkbox-item label {
+        font-size: 0.9em;
+    }
+
+    .content-forma-pagamento {
+        padding: 12px 15px;
+        margin-bottom: 8px;
+    }
+
+    .content-forma-pagamento svg {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .content-forma-pagamento span {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 350px) {
+    .content-container {
+        padding: 10px;
+    }
+
+    .content-formas h3 {
+        font-size: 1.2em;
+    }
+
+    .delivery-form-grid input[type="text"],
+    .delivery-form-grid input[type="tel"],
+    .delivery-form-grid select {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .content-forma-pagamento {
+        padding: 10px 12px;
+    }
+
+    .content-forma-pagamento svg {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}

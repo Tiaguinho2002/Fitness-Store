@@ -1,0 +1,225 @@
+$primary-bg: #1a1a1a;
+$secondary-bg: #2a2a2a;
+$text-color: #f0f0f0;
+$highlight-color: #a3ff00;
+$subtle-title-color: #b3b3b3;
+$link-color: #b3b3b3; 
+$link-hover-color: $highlight-color; 
+
+.footer {
+    background-color: $primary-bg;
+    color: $text-color;
+    font-family: 'Arial', sans-serif;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: underline;
+        }
+    }
+
+    .container-footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .informations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid rgba($text-color, 0.1);
+        padding-bottom: 2rem;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+        padding: 0.5rem 0;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 0.7rem; 
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: lighten($link-color, 10%);
+        }
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $subtle-title-color;
+        margin-bottom: 0; 
+        position: relative;
+        
+        &::after {
+            content: none; 
+        }
+    }
+
+    .Categorias {
+        .category-list {
+            margin-top: 0.8rem;
+            li {
+                &::before {
+                    content: '•';
+                    display: inline-block;
+                    margin-right: 0.5rem;
+                    color: $highlight-color;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .Parceiros {
+        ul {
+            margin-top: 0.8rem;
+        }
+    }
+
+    .Quem-Somos {
+        flex: 1.5;
+        min-width: 400px;
+        
+        p {
+            margin-top: 0.8rem;
+        }
+    }
+
+    .Fale-Conosco {
+        min-width: 220px;
+
+        .contact-list {
+            margin-top: 0.8rem;
+            li {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+        .schedule-title {
+            font-weight: bold;
+            color: $text-color;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        .schedule-text {
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+    }
+    
+    .main-logo-footer {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2.5rem;
+            color: $subtle-title-color;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    }
+
+    .full-width-banner {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 2rem;
+        object-fit: cover;
+        max-height: 150px;
+    }
+
+    .footer-bottom {
+        background-color: $secondary-bg;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+        color: lighten($link-color, 15%);
+        border-top: 1px solid rgba($text-color, 0.05);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .footer {
+        .informations {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .footer-section {
+            width: 100%;
+            min-width: auto;
+            padding: 0;
+
+            .section-title {
+                text-align: left;
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem; 
+            }
+        }
+        
+        .main-logo-footer h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding-top: 1rem;
+
+        .container-footer {
+            padding: 0 1rem;
+        }
+
+        .informations {
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem; 
+        }
+
+        .footer-section {
+            li, p {
+                font-size: 0.85rem;
+            }
+        }
+
+        .main-logo-footer h1 {
+            font-size: 1.8rem;
+        }
+
+        .footer-bottom {
+            padding: 1rem;
+            font-size: 0.75rem;
+        }
+    }
+}

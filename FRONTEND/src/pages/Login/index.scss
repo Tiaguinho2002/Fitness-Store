@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.login-box,
+.register-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.login-box h2,
+.register-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-box h2 i,
+.register-box h2 i {
+    margin-right: 10px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn-prosseguir,
+.btn-cadastrar {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; 
+}
+
+.btn-prosseguir:hover,
+.btn-cadastrar:hover {
+    background-color: #333;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password i {
+    margin-right: 5px;
+    color: #666;
+}
+
+.btn-google-login {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    align-self: flex-start;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    gap: 10px;
+    margin-top: 15px; /* Margem consistente */
+}
+
+.btn-google-login:hover {
+    background-color: #f5f5f5;
+    border-color: #bbb;
+}
+
+.btn-google-login .google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+    .login-box,
+    .register-box {
+        width: 90%;
+        max-width: 90%;
+        margin: 15px auto;
+    }
+}
