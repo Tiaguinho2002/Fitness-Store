@@ -1,0 +1,60 @@
+@SmartSystem_HostAddress = http://localhost:5266
+
+// GET para listar todos os clientes
+GET {{SmartSystem_HostAddress}}/api/Clientes
+Accept: application/json
+
+###
+
+// POST para adicionar um novo cliente
+POST {{SmartSystem_HostAddress}}/api/Clientes
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 4,
+  "nome": "Fernando da Silva",
+  "email": "fer.silva@exemplo.com"
+}
+
+###
+
+// PUT para atualizar um cliente específico
+PUT {{SmartSystem_HostAddress}}/api/Clientes/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 5,
+  "nome": "teste da Silva",
+  "email": "fernando.silva@exemplo.com"
+}
+
+###
+
+// DELETE para remover um cliente específico
+DELETE {{SmartSystem_HostAddress}}/api/Clientes/4
+
+
+### 
+
+POST {{SmartSystem_HostAddress}}/api/EnderecoClientes
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ClienteId": 2,
+  "Nome": "Tiago",
+  "Sobrenome": "Silva",
+  "Pais": "Brasil",
+  "Cep": 12345000,
+  "Numero": "102",
+  "Cidade": "São Paulo",
+  "Estado": "SP",
+  "Telefone": "11987654333"
+}
+
+###
+
+GET {{SmartSystem_HostAddress}}/api/EnderecoClientes
+Accept: application/json
