@@ -6,7 +6,7 @@
 ![Github repo size](https://img.shields.io/github/repo-size/seu-usuario/seu-repositorio)
 ![Github stars](https://img.shields.io/github/stars/seu-usuario/seu-repositorio?style=social)
 
-![Capa do Projeto]()
+![Capa do Projeto](https://github.com/user-attachments/assets/0eae2176-134d-4907-8f34-89cba5d73254)
 
 > Projeto de E-commerce de Suplementos.
 
@@ -16,8 +16,11 @@ Antes de executar o projeto, certifique-se de ter as seguintes dependências ins
 
 - Node.js: Essencial para o front-end React. Se não tiver, você pode baixar o NodeJs aqui.
 
-- .NET SDK: Necessário para o backend ASP.NET Core. Baixe o SDK aqui.
+    https://nodejs.org/en/download
 
+- .NET SDK: Necessário para o backend ASP.NET Core. Baixe o SDK aqui 
+
+    https://dotnet.microsoft.com/pt-br/download
 
 ## Como executar o projeto
 
