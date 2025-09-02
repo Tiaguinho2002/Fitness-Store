@@ -22,6 +22,8 @@ Antes de executar o projeto, certifique-se de ter as seguintes dependências ins
 
     https://dotnet.microsoft.com/pt-br/download
 
+- MySQL: A aplicação usa um banco de dados MySQL para persistência de dados de usuários e cadastros.
+
 ## Como executar o projeto
 
 Siga as etapas abaixo para executar o projeto em sua máquina local:
