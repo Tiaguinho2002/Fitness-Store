@@ -92,11 +92,6 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
 * `FRONTEND/`: Contém a aplicação React, responsável pela interface do usuário, lógica de navegação e exibição dos produtos.
 
 * `BACKEND/`: Contém a API em ASP.NET Core que lida com a comunicação com a API do Mercado Pago e a lógica de pagamento.
-  
-
-### Configurações e CI/CD
-
-* `pasta3/arquivo`: Configurações técnicas do projeto.
 
 ## Como contribuir
 
