@@ -1,67 +1,137 @@
-# Fitness-Store
+# Fitnes Store
 
-Descrição do Projeto
-Este projeto é uma loja virtual de suplementos e produtos fitness, desenvolvida com React para o front-end e um backend em ASP.NET Core para gerenciar pagamentos. O objetivo principal é criar uma plataforma completa e funcional para a venda de produtos de saúde e bem-estar.
+<!-- Shields Exemplo, existem N diferentes shield em https://shields.io/ -->
+![GitHub last commit](https://img.shields.io/github/last-commit/seu-usuario/seu-repositorio)
+![GitHub language count](https://img.shields.io/github/languages/count/seu-usuario/seu-repositorio)
+![Github repo size](https://img.shields.io/github/repo-size/seu-usuario/seu-repositorio)
+![Github stars](https://img.shields.io/github/stars/seu-usuario/seu-repositorio?style=social)
 
-Demonstração
-!(https://www.google.com/search?q=https://placehold.co/1200x600/000000/FFFFFF%3Ftext%3DIMAGEM%2BDA%2BTELA%2BINICIAL)
+![Capa do Projeto]()
 
-Tecnologias Utilizadas
-Front-end: React, TypeScript, SASS.
+> Projeto de E-commerce de Suplementos.
 
-Backend: ASP.NET Core, C#.
+## Pré-requisitos
 
-Pagamentos: Integração com a API do Mercado Pago (PIX, Boleto e Cartão de Crédito).
+Antes de executar o projeto, certifique-se de ter as seguintes dependências instaladas:
 
-Funcionalidades
-Navegação por Produtos: Os usuários podem buscar e navegar por diferentes categorias de suplementos.
+- Node.js: Essencial para o front-end React. Se não tiver, você pode baixar o NodeJs aqui.
 
-Carrinho de Compras: Adição e remoção de produtos do carrinho.
+- .NET SDK: Necessário para o backend ASP.NET Core. Baixe o SDK aqui.
 
-Login e Cadastro: Autenticação de usuários.
 
-Pagamentos: Finalização da compra via PIX, Boleto ou cartão.
+## Como executar o projeto
 
-Estrutura do Projeto
-O projeto é dividido em duas pastas principais:
+Siga as etapas abaixo para executar o projeto em sua máquina local:
 
-FRONTEND/: Contém a aplicação React, responsável pela interface do usuário e pela comunicação com a API.
+Execute os seguintes comandos a partir da pasta raiz do projeto:
 
-BACKEND/: Contém a API em ASP.NET Core que gerencia a lógica de negócio e a integração com o Mercado Pago.
+<!-- Aqui é tudo exemplo, só trocar -->
 
-Como Executar o Projeto Localmente
-Pré-requisitos
-Node.js (para o front-end)
+### Clone este repositório
 
-.NET SDK (para o backend)
+```bash
+git clone https://github.com/Tiaguinho2002/Fitness-Store.git](https://github.com/Tiaguinho2002/Fitness-Store.git
+```
 
-1. Backend (API de Pagamento)
-Navegue até a pasta do backend.
+Este link pode ser encontrado no botão verde acima `Code`.
 
-Restaure as dependências: dotnet restore
+### Instale as dependências
+Navegue até a pasta de cada parte do projeto e instale as dependências necessárias.
 
-Configure seu Access Token do Mercado Pago no arquivo appsettings.json.
+### Backend
+```bash
+cd BACKEND
+dotnet restore
+```
 
-Inicie a API: dotnet run
+### Frontend
+```bash
+cd FRONTEND
+npm install
+```
 
-2. Front-end (React)
-Navegue até a pasta do front-end.
+### Defina as variáveis de ambiente
 
-Instale as dependências: npm install
+No backend, configure o seu Access Token do Mercado Pago e a URL base no arquivo appsettings.json ou appsettings.Development.json.
 
-Inicie a aplicação: npm start
+### Execute o Projeto
 
-O projeto estará disponível em http://localhost:3000 (ou outra porta padrão do React).
+```bash
+npm run dev
+```
 
-Como Contribuir
-Fique à vontade para contribuir com este projeto! Siga os passos abaixo:
+## Estrutura de Pastas
 
-Faça um fork do repositório.
+A estrutura de pastas do projeto é organizada da seguinte maneira:
 
-Crie uma nova branch (git checkout -b feature/sua-feature).
+```text
+/
+|-- BACKEND/
+|   |-- Controllers/
+|   |-- Models/
+|   |-- appsettings.json
+|   |-- ...
+|-- FRONTEND/
+|   |-- src/
+|   |-- public/
+|   |-- node_modules/
+|   |-- ...
+|-- .gitignore
+|-- package-lock.json
+|-- package.json
+|-- README.md
+```
 
-Faça suas alterações e commit-as (git commit -m 'feat: nova funcionalidade').
+<!-- Outra forma de descrever é em texto corrido -->
 
-Envie suas alterações (git push origin feature/sua-feature).
+### Disposição e estilos
 
-Abra um Pull Request.
+* `FRONTEND/`: Contém a aplicação React, responsável pela interface do usuário, lógica de navegação e exibição dos produtos.
+
+* `BACKEND/`: Contém a API em ASP.NET Core que lida com a comunicação com a API do Mercado Pago e a lógica de pagamento.
+  
+
+### Configurações e CI/CD
+
+* `pasta3/arquivo`: Configurações técnicas do projeto.
+
+## Como contribuir
+
+Se você deseja contribuir para este projeto, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Criar a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub sobre [como criar uma solicitação de pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## Membros do Projeto (Opcional)
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/tiaguinho2002">
+        <img src="https://github.com/tiaguinho2002.png" width="100px">
+        <br>
+        <sub>
+          <b>Tiago</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## Licença
+
+Este projeto está sob licença. Consulte [LICENSE](LICENSE.md) para obter mais informações.
+
+## Voltar ao topo
+
+[⬆ Voltar ao topo](#título)
+
+
+
+
+    
